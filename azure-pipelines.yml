@@ -128,7 +128,7 @@ stages:
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
 
 - stage: 'Staging'
-  displayName: 'Deploy to the staging environment'
+  displayName: 'Deploy to the Staging environment'
   dependsOn: Test
   jobs:
   - deployment: Deploy
